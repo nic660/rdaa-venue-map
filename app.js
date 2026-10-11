@@ -13,11 +13,13 @@ const link = {
 
 const PIN_SVG = `<svg viewBox="0 0 30 38" aria-hidden="true"><line class="stem" x1="15" y1="29" x2="15" y2="37"/><path class="body" d="M15 2c5 0 8 6 8 14s-3 13-8 13-8-5-8-13 3-14 8-14z"/><path class="tip" d="M15 2c5 0 8 6 8 11H7c0-5 3-11 8-11z"/></svg>`;
 const pinIcon = (v, selected) => L.divIcon({
-  className: "pin" + (selected ? " sel" : "") + (v.venue.at.approx ? " approx" : ""),
+  className: `pin t-${v.type}` + (selected ? " sel" : "") + (v.venue.at.approx ? " approx" : ""),
   html: PIN_SVG, iconSize: [30, 38], iconAnchor: [15, 38],
 });
 
+const TYPES = { river: ["Rivers", "River"], lake: ["Lakes", "Lake"], canal: ["Canals", "Canal"] };
 let venues = [], sel = null, query = "";
+const shown = new Set(Object.keys(TYPES));
 const markers = new Map();
 
 const map = L.map("map", { zoomControl: false, minZoom: 8, maxZoom: 19, zoomSnap: 0.5 }).setView([51.5, -1.08], 10);
@@ -37,6 +39,9 @@ map.getPane("overviewLabels").style.pointerEvents = "none";
 
 function drawOverview(o) {
   const renderer = L.svg({ pane: "overview" });
+  for (const ring of o.lakes || []) {
+    L.polygon(ring, { pane: "overview", renderer, interactive: false, className: "ov-lake", weight: 1 }).addTo(overview);
+  }
   for (const r of o.rivers) {
     for (const line of r.lines) {
       L.polyline(line, {
@@ -70,7 +75,8 @@ function applyMode() {
 }
 map.on("zoomend", applyMode);
 const cluster = L.markerClusterGroup({
-  maxClusterRadius: 40, showCoverageOnHover: false, spiderfyOnMaxZoom: true,
+  // Group less as you zoom in, so the lakes and individual pins show through.
+  maxClusterRadius: z => (z >= 11 ? 22 : 40), showCoverageOnHover: false, spiderfyOnMaxZoom: true,
   iconCreateFunction: c => L.divIcon({
     html: `<div class="cl" style="width:34px;height:34px">${c.getChildCount()}</div>`,
     className: "", iconSize: [34, 34],
@@ -98,8 +104,21 @@ function reveal(m, center) {
   if (center || hidden) map.panBy([p.x - (box.x0 + box.x1) / 2, p.y - (box.y0 + box.y1) / 2]);
 }
 
-const matches = v => !query || [v.name, v.postcodes.join(" "), v.info, v.ticket]
-  .join(" ").toLowerCase().includes(query);
+const matches = v => shown.has(v.type) && (!query ||
+  [v.name, TYPES[v.type][1], v.postcodes.join(" "), v.info, v.ticket].join(" ").toLowerCase().includes(query));
+
+function renderTypeChips() {
+  $("types").innerHTML = Object.entries(TYPES).map(([t, [label]]) =>
+    `<button class="chip t-${t}" type="button" data-type="${t}" aria-pressed="${shown.has(t)}"><i></i>${label} · ${venues.filter(v => v.type === t).length}</button>`).join("");
+  $("types").querySelectorAll("[data-type]").forEach(b => b.onclick = () => {
+    const t = b.dataset.type;
+    shown.has(t) ? shown.delete(t) : shown.add(t);
+    b.setAttribute("aria-pressed", shown.has(t));
+    if (sel && !matches(sel)) closeSheet();
+    drawMarkers();
+    if (!$("list").hidden) renderList();
+  });
+}
 
 function drawMarkers() {
   cluster.clearLayers();
@@ -142,6 +161,7 @@ function select(v, { zoomTo = false } = {}) {
   const drive = v.parking.find(p => p.at) || (v.venue.at ? { label: "Venue", at: v.venue.at } : null);
   const anyApprox = [v.venue.at, ...v.parking.map(p => p.at)].some(p => p && p.approx);
   const meta = [
+    `<span class="m type t-${v.type}"><i></i>${TYPES[v.type][1]}</span>`,
     v.ticket && `<span class="m">${esc(ticketText(v.ticket))}</span>`,
     v.closeSeason && `<span class="m warn">Closed 15 Mar – 15 Jun</span>`,
     ...v.postcodes.map(pc => `<span class="m">${esc(pc)}</span>`),
@@ -188,9 +208,9 @@ function closeSheet() {
 function renderList() {
   const rows = venues.filter(matches);
   $("list").innerHTML = (rows.length
-    ? rows.map(v => `<button class="row" type="button" data-slug="${esc(v.slug)}"><b>${esc(v.name)}</b><small>${esc([v.postcodes[0] || "No postcode", v.ticket && ticketText(v.ticket)].filter(Boolean).join(" · "))}</small><span class="r${v.venue.at ? "" : " miss"}">${v.venue.at ? "Map ›" : "Not on map"}</span></button>`).join("")
-    : `<p class="empty">No venue matches “${esc(query)}”.</p>`)
-    + `<p class="foot">${venues.length} river venues from rdaa.co.uk, last checked ${esc(window.scraped || "")}.</p>`;
+    ? rows.map(v => `<button class="row" type="button" data-slug="${esc(v.slug)}"><b>${esc(v.name)}</b><small><i class="dot t-${v.type}"></i>${esc([TYPES[v.type][1], v.postcodes[0] || "No postcode", v.ticket && ticketText(v.ticket)].filter(Boolean).join(" · "))}</small><span class="r${v.venue.at ? "" : " miss"}">${v.venue.at ? "Map ›" : "Not on map"}</span></button>`).join("")
+    : `<p class="empty">${query ? `No venue matches “${esc(query)}”.` : "No venue types selected. Turn on Rivers, Lakes or Canals above."}</p>`)
+    + `<p class="foot">${venues.length} venues from rdaa.co.uk, last checked ${esc(window.scraped || "")}.</p>`;
   $("list").querySelectorAll("[data-slug]").forEach(b =>
     b.onclick = () => select(venues.find(v => v.slug === b.dataset.slug), { zoomTo: true }));
 }
@@ -229,6 +249,7 @@ fetch("venues.json", { cache: "no-cache" })
   .then(data => {
     venues = data.venues;
     window.scraped = data.scraped;
+    renderTypeChips();
     drawMarkers();
     const start = venues.find(v => "#" + v.slug === decodeURIComponent(location.hash));
     if (start) select(start, { zoomTo: true });
