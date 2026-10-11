@@ -2,6 +2,7 @@
   --bg:#f2f4f0; --ink:#16231e; --muted:#58695f; --line:#cbd6cc;
   --brand:#1c4a3e; --on-brand:#eef5f0; --link:#2f6f80;
   --float:#ee4f17; --surface:#ffffff; --chip:#e4ebe5; --warn:#a2560b; --warn-bg:#fbeedd;
+  --paper:#e6ede4; --water:#8fc2cf; --water-ink:#3d7d8f;
   --f-display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
   --f-body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
   --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
@@ -9,7 +10,8 @@
 @media (prefers-color-scheme: dark){:root{
   --bg:#0e1412; --ink:#e3ece7; --muted:#93a59b; --line:#2b3a34;
   --brand:#12302a; --on-brand:#e3ece7; --link:#7cc0d2;
-  --float:#ff6b35; --surface:#1c2723; --chip:#24312c; --warn:#f0b26a; --warn-bg:#3a2a16; color-scheme:dark}}
+  --float:#ff6b35; --surface:#1c2723; --chip:#24312c; --warn:#f0b26a; --warn-bg:#3a2a16;
+  --paper:#17211d; --water:#2c6878; --water-ink:#7cc0d2; color-scheme:dark}}
 
 *{box-sizing:border-box}
 html,body{height:100%;margin:0}
@@ -31,6 +33,16 @@ body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:1
 .map{position:absolute;inset:0;background:var(--bg)}
 .fit{position:absolute;right:10px;top:86px;z-index:900;height:34px;padding:0 12px;border-radius:8px;border:2px solid rgba(0,0,0,.2);background:#fff;color:#16231e;font:700 12px var(--f-body);letter-spacing:.06em;text-transform:uppercase;cursor:pointer;background-clip:padding-box}
 .leaflet-container{font-family:var(--f-body)}
+
+/* Overview sketch */
+.map.overview{background:var(--paper)}
+.ov-river{stroke:var(--water);stroke-linecap:round;stroke-linejoin:round}
+.ov-canal{stroke:var(--water);stroke-dasharray:1 5;stroke-linecap:round;opacity:.9}
+.ov-town span,.ov-riv span{position:absolute;white-space:nowrap;transform:translate(-50%,-50%)}
+.ov-town span{font:600 11px var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.ov-riv span{font:italic 500 12px var(--f-body);color:var(--water-ink);transform:translate(-50%,-150%);text-shadow:0 0 3px var(--paper),0 0 3px var(--paper)}
+.map.far .minor{display:none}
+.hint{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:800;margin:0;padding:5px 12px;border-radius:99px;background:var(--surface);color:var(--muted);font-size:12px;box-shadow:0 1px 4px rgba(0,0,0,.15);white-space:nowrap;pointer-events:none}
 
 /* Float-tip pins and clusters */
 .pin{background:none;border:0}

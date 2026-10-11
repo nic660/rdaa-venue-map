@@ -20,12 +20,55 @@ const pinIcon = (v, selected) => L.divIcon({
 let venues = [], sel = null, query = "";
 const markers = new Map();
 
-const map = L.map("map", { zoomControl: false }).setView([51.5, -1.08], 10);
+const map = L.map("map", { zoomControl: false, minZoom: 8, maxZoom: 19, zoomSnap: 0.5 }).setView([51.5, -1.08], 10);
 L.control.zoom({ position: "topright" }).addTo(map);
-L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  maxZoom: 19,
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-}).addTo(map);
+map.attributionControl.addAttribution('&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors');
+
+// Zoomed out: a simple sketch of the rivers and towns. Zoomed in: the street map.
+const DETAIL_ZOOM = 12;
+const LABELS_ZOOM = 10;   // below this, only the main towns are labelled
+const MAIN_TOWNS = new Set(["Oxford", "Reading", "Wallingford", "Henley", "Newbury"]);
+const tiles = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19 });
+const overview = L.layerGroup();
+let hasOverview = false;
+map.createPane("overview").style.zIndex = 250;
+map.createPane("overviewLabels").style.zIndex = 450;
+map.getPane("overviewLabels").style.pointerEvents = "none";
+
+function drawOverview(o) {
+  const renderer = L.svg({ pane: "overview" });
+  for (const r of o.rivers) {
+    for (const line of r.lines) {
+      L.polyline(line, {
+        pane: "overview", renderer, interactive: false,
+        className: r.canal ? "ov-canal" : "ov-river", weight: r.weight * 1.3,
+      }).addTo(overview);
+    }
+  }
+  const label = cls => t => L.marker([t.lat, t.lng], {
+    pane: "overviewLabels", interactive: false, keyboard: false,
+    icon: L.divIcon({ className: cls(t), html: `<span>${esc(t.name)}</span>`, iconSize: [0, 0] }),
+  }).addTo(overview);
+  o.towns.forEach(label(t => "ov-town" + (MAIN_TOWNS.has(t.name) ? "" : " minor")));
+  o.riverLabels.forEach(label(() => "ov-riv minor"));
+  hasOverview = true;
+  applyMode();
+}
+
+function applyMode() {
+  const detail = !hasOverview || map.getZoom() >= DETAIL_ZOOM;
+  map.getContainer().classList.toggle("overview", !detail);
+  map.getContainer().classList.toggle("far", map.getZoom() < LABELS_ZOOM);
+  if (detail) {
+    if (!map.hasLayer(tiles)) tiles.addTo(map);
+    map.removeLayer(overview);
+  } else {
+    map.removeLayer(tiles);
+    if (!map.hasLayer(overview)) overview.addTo(map);
+  }
+  $("hint").hidden = detail;
+}
+map.on("zoomend", applyMode);
 const cluster = L.markerClusterGroup({
   maxClusterRadius: 40, showCoverageOnHover: false, spiderfyOnMaxZoom: true,
   iconCreateFunction: c => L.divIcon({
@@ -174,6 +217,12 @@ $("q").addEventListener("input", e => {
   drawMarkers();
   if (!$("list").hidden) renderList();
 });
+
+// Without the overview file the app still works, just with the street map at every zoom.
+fetch("overview.json")
+  .then(r => r.json())
+  .then(drawOverview)
+  .catch(applyMode);
 
 fetch("venues.json", { cache: "no-cache" })
   .then(r => r.json())
