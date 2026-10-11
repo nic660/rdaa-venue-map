@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RDAA Venues</title>
+<meta name="theme-color" content="#1c4a3e">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="RDAA Venues">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="bar">
+    <div class="bar-top">
+      <div class="brand">RDAA<small>Venues</small></div>
+      <a class="club" href="https://www.rdaa.co.uk/rivers" target="_blank" rel="noopener">rdaa.co.uk ↗</a>
+    </div>
+    <div class="tools">
+      <input id="q" class="search" type="search" placeholder="Search venue, river, postcode" aria-label="Search venues" autocomplete="off">
+      <div class="seg" role="group" aria-label="View">
+        <button id="vMap" type="button" aria-pressed="true">Map</button>
+        <button id="vList" type="button" aria-pressed="false">List</button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div id="map" class="map" aria-label="Map of venues"></div>
+    <button id="fitAll" class="fit" type="button" aria-label="Show all venues">All</button>
+    <div id="list" class="list" hidden></div>
+    <section id="sheet" class="sheet" hidden aria-live="polite"></section>
+  </main>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" crossorigin=""></script>
+<script src="app.js"></script>
+</body>
+</html>

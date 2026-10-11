@@ -1,0 +1,854 @@
+{
+ "scraped": "2026-10-11",
+ "venues": [
+  {
+   "slug": "beat-2",
+   "url": "https://www.rdaa.co.uk/lake-venues/beat-2",
+   "type": "river",
+   "name": "Beat 2",
+   "ticket": "GENERAL PERMIT",
+   "postcodes": [
+    "RG30 3UN"
+   ],
+   "postcodeText": "RG30 3UN",
+   "closeSeason": false,
+   "directions": "Parking can be found at ///closer.looked.envy Once parked, follow the Public footpath North to the river.",
+   "info": "One of our more productive beats for good size barbel and chub with some decent roach and perch and the occasional bream. General Permit - see permitted times Night fishing is avalibable to Bronze ticket holders",
+   "venue": {
+    "w3w": "traps.valve.rivers",
+    "at": {
+     "lat": 51.434711,
+     "lng": -1.00517,
+     "approx": false
+    }
+   },
+   "parking": [
+    {
+     "label": "Parking",
+     "w3w": "closer.looked.envy",
+     "at": {
+      "lat": 51.432069,
+      "lng": -1.003872,
+      "approx": false
+     }
+    }
+   ]
+  },
+  {
+   "slug": "beat-3b",
+   "url": "https://www.rdaa.co.uk/lake-venues/beat-3b",
+   "type": "river",
+   "name": "Beat 3b",
+   "ticket": "GENERAL PERMIT",
+   "postcodes": [
+    "RG7 0RP"
+   ],
+   "postcodeText": "RG7 0RP",
+   "closeSeason": true,
+   "directions": "Parking can be found at ///keeps.bridge.using",
+   "info": "Beat 3B. section is also known as the backwater, holding barbel and chub to specimen sizes with reasonable numbers stocks of roach, dace and perch. Also some big pike reported in recent years. General Permit - see permitted times Night fishing is avalibale to Bronze Ticket Holders. CLOSED March 15th - June 15th GUEST & DAY TICKETS AVAILABLE",
+   "venue": {
+    "w3w": "cave.strike.grit",
+    "at": {
+     "lat": 51.435465,
+     "lng": -0.997209,
+     "approx": false
+    }
+   },
+   "parking": [
+    {
+     "label": "Parking",
+     "w3w": "keeps.bridge.using",
+     "at": {
+      "lat": 51.433848,
+      "lng": -0.986089,
+      "approx": false
+     }
+    }
+   ]
+  },
+  {
+   "slug": "beat-4",
+   "url": "https://www.rdaa.co.uk/lake-venues/beat-4",
+   "type": "river",
+   "name": "Beat 4",
+   "ticket": "GENERAL PERMIT",
+   "postcodes": [
+    "RG2 0HP"
+   ],
+   "postcodeText": "RG2 0HP",
+   "closeSeason": true,
+   "directions": "Upstream parking can be found at ///keeps.bridge.using Downstream parking can be found at ///spot.stir.strut",
+   "info": "A mixed fishery that has produced specimen sized barbel and chub along with some good catches of bream at times. There’s a reasonable head of roach, dace and perch with stick float tactics usually the favoured method. LENGTH 1350 yds, some double bank. A Section from Fobney Island end of Beat 3 to A33 Bridge. B Section from A33 bridge to White Bridge (Beat 5). General permit - see permitted times Night fishing is avalibale to Bronze Permit holders CLOSED March 15th - June 15th GUEST & DAY TICKETS AVAILABLE",
+   "venue": {
+    "w3w": "moons.wishes.next",
+    "at": {
+     "lat": 51.434522,
+     "lng": -0.985094,
+     "approx": false
+    }
+   },
+   "parking": [
+    {
+     "label": "Upstream parking",
+     "w3w": "keeps.bridge.using",
+     "at": {
+      "lat": 51.433848,
+      "lng": -0.986089,
+      "approx": false
+     }
+    },
+    {
+     "label": "Downstream parking",
+     "w3w": "spot.stir.strut",
+     "at": {
+      "lat": 51.441314,
+      "lng": -0.976744,
+      "approx": false
+     }
+    }
+   ]
+  },
+  {
+   "slug": "beat-5",
+   "url": "https://www.rdaa.co.uk/lake-venues/beat-5",
+   "type": "river",
+   "name": "Beat 5",
+   "ticket": "GENERAL PERMIT",
+   "postcodes": [
+    "RG2 0JZ"
+   ],
+   "postcodeText": "RG2 0JZ",
+   "closeSeason": true,
+   "directions": "Parking can be found at ///spot.stir.strut",
+   "info": "The swims up from the Berkeley Avenue Road Bridge are known for chub with the occasional large barbel. Roach, dace and perch are present in good numbers at certain times and even trout can be found this far downstream. A Section from White Bridge to Holybrook mouth. B Section from Holybrook mouth to end of venue. General permit - see permitted times Night fishing is avalibale to Bronze Permit holders CLOSED March 15th - June 15th GUEST & DAY TICKETS AVAILABLE",
+   "venue": {
+    "w3w": "across.regime.penny",
+    "at": {
+     "lat": 51.440855,
+     "lng": -0.975056,
+     "approx": false
+    }
+   },
+   "parking": [
+    {
+     "label": "Parking",
+     "w3w": "spot.stir.strut",
+     "at": {
+      "lat": 51.441314,
+      "lng": -0.976744,
+      "approx": false
+     }
+    }
+   ]
+  },
+  {
+   "slug": "burghfield-river",
+   "url": "https://www.rdaa.co.uk/lake-venues/burghfield-river",
+   "type": "river",
+   "name": "Burghfield River",
+   "ticket": "GENERAL PERMIT",
+   "postcodes": [
+    "RG30 3RB"
+   ],
+   "postcodeText": "RG30 3RB",
+   "closeSeason": true,
+   "directions": "Side of road parking can be found at ///rises.town.wages (Upstream) and ///forest.calls.forced (Downstream)",
+   "info": "A good mixed fishery which has produced barbel to over 14lbs and chub to well over 6lbs in recent seasons. Decent stick float fishing for roach, perch and dace at times and the occasional big trout and specimen roach. The area below the lock is a useful back up spot when the main river is in flood and often holds good pike plus some reasonable perch and big chub. General Permit - See permitted times under rules Night Fishing is avalibale to Bronze Permit holders CLOSED March 15th - June 15th GUEST & DAY TICKETS AVAILABLE",
+   "venue": {
+    "w3w": "suffice.mining.prom",
+    "at": {
+     "lat": 51.432447,
+     "lng": -1.031391,
+     "approx": false
+    }
+   },
+   "parking": [
+    {
+     "label": "Upstream · Roadside parking",
+     "w3w": "rises.town.wages",
+     "at": {
+      "lat": 51.431584,
+      "lng": -1.032386,
+      "approx": false
+     }
+    },
+    {
+     "label": "Downstream · Roadside parking",
+     "w3w": "forest.calls.forced",
+     "at": {
+      "lat": 51.431396,
+      "lng": -1.021353,
+      "approx": false
+     }
+    }
+   ]
+  },
+  {
+   "slug": "calcot-river",
+   "url": "https://www.rdaa.co.uk/lake-venues/calcot-river",
+   "type": "river",
+   "name": "Calcot River",
+   "ticket": "GENERAL PERMIT",
+   "postcodes": [
+    "RG30 3TA"
+   ],
+   "postcodeText": "RG30 3TA",
+   "closeSeason": true,
+   "directions": "Parking can be found at ///bugs.animal.meant",
+   "info": "A good mixed fishery with secure car parking holding some specimen sized barbel particularly on the upstream end (Arrowhead) with the deeper downstream end holding good numbers of quality bream and perch and the occasion big carp. Chub are in reasonable numbers all the way through the venue with fish to 8lbs together with some quality roach. General Permit - See permitted times under rules Night fishing is avalibale to Bronze Permit holders CLOSED March 15th - June 15th GUEST & DAY TICKETS AVAILABLE",
+   "venue": {
+    "w3w": "began.noble.churn",
+    "at": {
+     "lat": 51.43277,
+     "lng": -1.058346,
+     "approx": false
+    }
+   },
+   "parking": [
+    {
+     "label": "Parking",
+     "w3w": "bugs.animal.meant",
+     "at": {
+      "lat": 51.433875,
+      "lng": -1.048698,
+      "approx": false
+     }
+    }
+   ]
+  },
+  {
+   "slug": "holybrook",
+   "url": "https://www.rdaa.co.uk/lake-venues/holybrook",
+   "type": "river",
+   "name": "Holybrook",
+   "ticket": "GENERAL PERMIT",
+   "postcodes": [
+    "RG30 3TA"
+   ],
+   "postcodeText": "RG30 3TA",
+   "closeSeason": true,
+   "directions": "Parking can be found at bugs.animal.meant",
+   "info": "An ideal venue for those that like to stalk small river/stream chub and barbel. Best fish in warmer months if the main river is in flood, chances of decent roach and perch too. General Permit - See permitted times under rules CLOSED March 15th - June 15th GUEST & DAY TICKETS AVAILABLE",
+   "venue": {
+    "w3w": "boot.forces.kind",
+    "at": {
+     "lat": 51.433013,
+     "lng": -1.059558,
+     "approx": false
+    }
+   },
+   "parking": [
+    {
+     "label": "Parking",
+     "w3w": "bugs.animal.meant",
+     "at": {
+      "lat": 51.433875,
+      "lng": -1.048698,
+      "approx": false
+     }
+    }
+   ]
+  },
+  {
+   "slug": "lower-benyon",
+   "url": "https://www.rdaa.co.uk/lake-venues/lower-benyon",
+   "type": "river",
+   "name": "Lower Benyon",
+   "ticket": "GENERAL PERMIT",
+   "postcodes": [
+    "RG7 5HH"
+   ],
+   "postcodeText": "RG7 5HH",
+   "closeSeason": true,
+   "directions": "Side of road parking can be found at ///scare.hooked.brands (Downstream) or ///hoping.amber.reveal (Upstream) which is a public car park",
+   "info": "Divided into three sections all of which have produced specimen barbel, perch and chub. A historic venue, deeply seated in the annals of barbel fishing, with plenty of cover, deep bends and attractive fish holding features. This venue holds the current RDAA records for Barbel and Brown Trout. General Permit - See permitted times under rules NO NIGHT FISHING CLOSED March 15th - June 15th GUEST TICKETS AVAILABLE NO DAY TICKETS",
+   "venue": {
+    "w3w": "frozen.fired.skill",
+    "at": {
+     "lat": 51.419753,
+     "lng": -1.101051,
+     "approx": false
+    }
+   },
+   "parking": [
+    {
+     "label": "Downstream · Roadside parking",
+     "w3w": "scare.hooked.brands",
+     "at": {
+      "lat": 51.428269,
+      "lng": -1.090581,
+      "approx": false
+     }
+    },
+    {
+     "label": "Upstream · Public car park",
+     "w3w": "hoping.amber.reveal",
+     "at": {
+      "lat": 51.418594,
+      "lng": -1.09997,
+      "approx": false
+     }
+    }
+   ]
+  },
+  {
+   "slug": "northmoor",
+   "url": "https://www.rdaa.co.uk/lake-venues/northmoor",
+   "type": "river",
+   "name": "Northmoor",
+   "ticket": "GENERAL PERMIT & BRONZE PERMIT NIGHT FISHING",
+   "postcodes": [
+    "OX29 5AT"
+   ],
+   "postcodeText": "OX29 5AT",
+   "closeSeason": false,
+   "directions": "Parking can be found at calculate.toward.dried or Upstream at the Ferryman pub at a cost of £5 truck.ramp.maddening",
+   "info": "Venue only Permits for this fishery are available from info@rdda.co.uk General Permit - See permitted times under rules",
+   "venue": {
+    "w3w": "presenter.tissue.magnitude",
+    "at": {
+     "lat": 51.733546,
+     "lng": -1.370363,
+     "approx": false
+    }
+   },
+   "parking": [
+    {
+     "label": "Parking",
+     "w3w": "calculate.toward.dried",
+     "at": {
+      "lat": 51.721122,
+      "lng": -1.375327,
+      "approx": false
+     }
+    },
+    {
+     "label": "Upstream · Ferryman pub (£5)",
+     "w3w": "truck.ramp.maddening",
+     "at": {
+      "lat": 51.734975,
+      "lng": -1.372018,
+      "approx": false
+     }
+    }
+   ]
+  },
+  {
+   "slug": "padworth-river",
+   "url": "https://www.rdaa.co.uk/lake-venues/padworth-river",
+   "type": "river",
+   "name": "Padworth River",
+   "ticket": "GENERAL PERMIT",
+   "postcodes": [
+    "RG7 4LL"
+   ],
+   "postcodeText": "RG7 4LL",
+   "closeSeason": false,
+   "directions": "///financial.glaze.heave",
+   "info": "This venue can be night fished on a General permit at no extra cost. No dogs are allowed.",
+   "venue": {
+    "w3w": "helped.fencing.nodded",
+    "at": {
+     "lat": 51.394715,
+     "lng": -1.135654,
+     "approx": false
+    }
+   },
+   "parking": [
+    {
+     "label": "Parking",
+     "w3w": "financial.glaze.heave",
+     "at": {
+      "lat": 51.397653,
+      "lng": -1.132456,
+      "approx": false
+     }
+    }
+   ]
+  },
+  {
+   "slug": "river-blackwater",
+   "url": "https://www.rdaa.co.uk/lake-venues/river-blackwater",
+   "type": "river",
+   "name": "River Blackwater",
+   "ticket": "GENERAL PERMIT",
+   "postcodes": [
+    "RG7 1TB"
+   ],
+   "postcodeText": "RG7 1TB",
+   "closeSeason": false,
+   "directions": "Upstream parking ///data.streaking.wiped Downstream parking ///linen.levels.inner",
+   "info": "The Blackwater permits are available online here via Clubmate (including the lock combination codes for the southern farm gate). THIS IS NOT AN OPEN ACCESS FISHERY AND PERMITS MUST BE BOOKED OUT IN ADVANCE",
+   "venue": {
+    "w3w": "lower.unframed.motive",
+    "at": {
+     "lat": 51.364826,
+     "lng": -0.936982,
+     "approx": false
+    }
+   },
+   "parking": [
+    {
+     "label": "Upstream parking",
+     "w3w": "data.streaking.wiped",
+     "at": {
+      "lat": 51.364745,
+      "lng": -0.937068,
+      "approx": false
+     }
+    },
+    {
+     "label": "Downstream parking",
+     "w3w": "linen.levels.inner",
+     "at": {
+      "lat": 51.376577,
+      "lng": -0.949408,
+      "approx": false
+     }
+    }
+   ]
+  },
+  {
+   "slug": "sandford-(shared-water)",
+   "url": "https://www.rdaa.co.uk/lake-venues/sandford-(shared-water)",
+   "type": "river",
+   "name": "Sandford (shared water)",
+   "ticket": "GENERAL PERMIT",
+   "postcodes": [
+    "OX1 5RP"
+   ],
+   "postcodeText": "OX1 5RP",
+   "closeSeason": false,
+   "directions": "Public parking can be found at ///regrowth.sketch.period",
+   "info": "RDAA and Littlemore A.S.( www.littlemoreanglingsociety.co.uk ) have agreed to share their waters at Sandford in the Oxford area. This will not include match days, RDAA members please check Littlemore Match Booking dates which can be found on our website before fishing.",
+   "venue": {
+    "w3w": "poppy.spicy.loves",
+    "at": {
+     "lat": 51.715651,
+     "lng": -1.23561,
+     "approx": false
+    }
+   },
+   "parking": [
+    {
+     "label": "Public car park",
+     "w3w": "regrowth.sketch.period",
+     "at": {
+      "lat": 51.706352,
+      "lng": -1.233277,
+      "approx": false
+     }
+    }
+   ]
+  },
+  {
+   "slug": "sandford-weir",
+   "url": "https://www.rdaa.co.uk/lake-venues/sandford-weir",
+   "type": "river",
+   "name": "Sandford Weir",
+   "ticket": "GENERAL PERMIT",
+   "postcodes": [
+    "OX1 5RP"
+   ],
+   "postcodeText": "OX1 5RP",
+   "closeSeason": true,
+   "directions": "Parking can be found at ///detail.upcoming.motivator",
+   "info": "The Thames at Sandford is renowned for species such as Barbel, Chub, Roach, Perch, Silver Bream, Pike and the occasional Carp. LENGTH 1093yrds No Close Season Fishing - CLOSED March 15th - June 15th GUEST & DAY TICKETS AVAILABLE NIGHT FISHING PERMITTED ON GENERAL PERMIT Sandford Weir Venue RDAA and Littlemore A.S.( www.littlemoreanglingsociety.co.uk ) have agreed to share their waters at Sandford in the Oxford area. This will not include match days, RDAA members please check Littlemore Match Booking dates before fishing.",
+   "venue": {
+    "w3w": "baking.vague.aside",
+    "at": {
+     "lat": 51.715165,
+     "lng": -1.236481,
+     "approx": false
+    }
+   },
+   "parking": [
+    {
+     "label": "Parking",
+     "w3w": "detail.upcoming.motivator",
+     "at": {
+      "lat": 51.706811,
+      "lng": -1.233886,
+      "approx": false
+     }
+    }
+   ]
+  },
+  {
+   "slug": "sonning-river",
+   "url": "https://www.rdaa.co.uk/lake-venues/sonning-river",
+   "type": "river",
+   "name": "Sonning River",
+   "ticket": "GENERAL PERMIT OR BRONZE NIGHT PERMIT",
+   "postcodes": [
+    "RG4 6TU"
+   ],
+   "postcodeText": "RG4 6TU",
+   "closeSeason": true,
+   "directions": "Parking can be found at ///simply.stroke.filed There is also a small area for parking at the Northern end of the lake ///rapid.pulse.grass",
+   "info": "The Thames at Sonning is renowned for species such as Chub, Roach, Perch, Bream, Pike and the occasional Carp. LENGTH 1450 yrds CLOSED March 15th - June 15th General Permit - See permitted times under rules Night fishing is avalibale to BRONZE TICKET HOLDERS.",
+   "venue": {
+    "w3w": "ripe.shelf.payer",
+    "at": {
+     "lat": 51.467618,
+     "lng": -0.92626,
+     "approx": false
+    }
+   },
+   "parking": [
+    {
+     "label": "Parking",
+     "w3w": "simply.stroke.filed",
+     "at": {
+      "lat": 51.473224,
+      "lng": -0.920067,
+      "approx": false
+     }
+    },
+    {
+     "label": "North end parking",
+     "w3w": "rapid.pulse.grass",
+     "at": {
+      "lat": 51.477617,
+      "lng": -0.922492,
+      "approx": false
+     }
+    }
+   ]
+  },
+  {
+   "slug": "south-stoke-%26-cholsey-(shared-waters)",
+   "url": "https://www.rdaa.co.uk/lake-venues/south-stoke-%26-cholsey-(shared-waters)",
+   "type": "river",
+   "name": "South Stoke & Cholsey (Shared waters)",
+   "ticket": "GENERAL PERMIT",
+   "postcodes": [],
+   "postcodeText": "",
+   "closeSeason": false,
+   "directions": "Upstream parking ///galloped.bridges.unfocused Downstream parking ///scorching.package.announce",
+   "info": "We have agreed to take over the maintenance and bailiffing of both the LAA stretches at South Stoke (East Bank) and Cholsey (West Bank) - approximately 1.3 miles in total. South Stoke is an easy walk and is well known for its quality roach fishing. Some big shoals of bream are also present along with good chub and pike. Access is via the track at the end of Ferry Road, South Stoke and just beyond the Perch and Pike pub. Park on the right of the track before the river. The railway bridge marks upstream boundary on the East Bank.",
+   "venue": {
+    "w3w": "agreeable.courage.flip",
+    "at": {
+     "lat": 51.564993,
+     "lng": -1.134474,
+     "approx": false
+    }
+   },
+   "parking": [
+    {
+     "label": "Upstream parking",
+     "w3w": "galloped.bridges.unfocused",
+     "at": {
+      "lat": 51.565236,
+      "lng": -1.134344,
+      "approx": false
+     }
+    },
+    {
+     "label": "Downstream parking",
+     "w3w": "scorching.package.announce",
+     "at": {
+      "lat": 51.549253,
+      "lng": -1.144836,
+      "approx": false
+     }
+    }
+   ]
+  },
+  {
+   "slug": "theale-river",
+   "url": "https://www.rdaa.co.uk/lake-venues/theale-river",
+   "type": "river",
+   "name": "Theale River",
+   "ticket": "GENERAL PERMIT",
+   "postcodes": [
+    "RG7 4BD"
+   ],
+   "postcodeText": "RG7 4BD",
+   "closeSeason": false,
+   "directions": "Parking can be found at vast.backs.sounds",
+   "info": "This stretch holds some large barbel to over 16lbs and chub to 7lbs, particularly at the upstream end and lower down near the canal mouth. Specimen perch are present throughout, along with the occasional tench and some bream. At times good bags of roach and dace will fall to stick float tactics. General Permit - See permitted times under rules Night fishing is avalibale to Bronze ticket holders",
+   "venue": {
+    "w3w": "radar.remove.sizes",
+    "at": {
+     "lat": 51.424792,
+     "lng": -1.084177,
+     "approx": false
+    }
+   },
+   "parking": [
+    {
+     "label": "Parking",
+     "w3w": "vast.backs.sounds",
+     "at": {
+      "lat": 51.430237,
+      "lng": -1.069077,
+      "approx": false
+     }
+    }
+   ]
+  },
+  {
+   "slug": "ufton-river",
+   "url": "https://www.rdaa.co.uk/lake-venues/ufton-river",
+   "type": "river",
+   "name": "Ufton River",
+   "ticket": "GENERAL PERMIT",
+   "postcodes": [
+    "RG7 4HG"
+   ],
+   "postcodeText": "RG7 4HG",
+   "closeSeason": false,
+   "directions": "Parking can be found at hobbyists.comb.selling (Upstream) or broke.agree.atoms (Downstream)",
+   "info": "A productive, double banked section of largely canalised river holding chub, barbel and perch in reasonable numbers and to specimen sizes. The upper section is faster flowing and fishes well in the Summer and Autumn for roach, dace and chub. The lower section is much deeper and fishes well in winter months. Large dace can show here in good bags with roach in numbers along with trout. There are some big carp and bream here too and the occasional grayling. General Permit - See permitted times under rules Night fishing is avalibale to Bronze ticket holders.",
+   "venue": {
+    "w3w": "evolves.native.simmer",
+    "at": {
+     "lat": 51.41385,
+     "lng": -1.111795,
+     "approx": false
+    }
+   },
+   "parking": [
+    {
+     "label": "Upstream parking",
+     "w3w": "hobbyists.comb.selling",
+     "at": {
+      "lat": 51.413203,
+      "lng": -1.112055,
+      "approx": false
+     }
+    },
+    {
+     "label": "Downstream parking",
+     "w3w": "broke.agree.atoms",
+     "at": {
+      "lat": 51.41854,
+      "lng": -1.100013,
+      "approx": false
+     }
+    }
+   ]
+  },
+  {
+   "slug": "upper-benyon",
+   "url": "https://www.rdaa.co.uk/lake-venues/upper-benyon",
+   "type": "river",
+   "name": "Upper Benyon",
+   "ticket": "GENERAL PERMIT",
+   "postcodes": [
+    "RG7 4HY"
+   ],
+   "postcodeText": "RG7 4HY",
+   "closeSeason": false,
+   "directions": "Upstream side of road parking can be found at ///throw.sinkhole.horns or Upstream RDAA car park at ///coverings.hops.maximum Downstream RDAA parking at ///hobbyists.comb.selling",
+   "info": "Perhaps one of the most stunning stretches of the Lower Kennet with fast runs and attractive, sweeping bends. Historically this was the most prolific barbel stretch on the whole river but is now a venue in transition. Large barbel and chub can still be found along with very large wild brown trout and some decent pike. Perch can be found to specimen sizes and there are shoals of dace and roach on the lower sections with a number of good fish amongst them. Grayling have been stocked recently and seem to be doing well. General Permit - See permitted times under rules Night fishing is avalibale to Bronze ticket holders.",
+   "venue": {
+    "w3w": "tourist.cashiers.ahead",
+    "at": {
+     "lat": 51.399539,
+     "lng": -1.122688,
+     "approx": false
+    }
+   },
+   "parking": [
+    {
+     "label": "Upstream · Roadside parking",
+     "w3w": "throw.sinkhole.horns",
+     "at": {
+      "lat": 51.399243,
+      "lng": -1.122169,
+      "approx": false
+     }
+    },
+    {
+     "label": "Upstream · RDAA car park",
+     "w3w": "coverings.hops.maximum",
+     "at": {
+      "lat": 51.40218,
+      "lng": -1.125411,
+      "approx": false
+     }
+    },
+    {
+     "label": "Downstream · RDAA car park",
+     "w3w": "hobbyists.comb.selling",
+     "at": {
+      "lat": 51.413203,
+      "lng": -1.112055,
+      "approx": false
+     }
+    }
+   ]
+  },
+  {
+   "slug": "wallingford-(shared-water)",
+   "url": "https://www.rdaa.co.uk/lake-venues/wallingford-(shared-water)",
+   "type": "river",
+   "name": "Wallingford (Shared water)",
+   "ticket": "GENERAL PERMIT",
+   "postcodes": [],
+   "postcodeText": "",
+   "closeSeason": false,
+   "directions": "Upstream parking ///serve.chest.departure Downstream parking ///galloped.bridges.unfocused",
+   "info": "Town Waters - from the three firs (downstream end of RDAA Wallingford water) to the wooden bridge. Parking in the cemetery lane. Chalmore - one field upstream and two fields downstream of the western side of the Wallingford bypass bridge. Parking is on the footpath on the downstream side of the bridge. Cars should be fully off the road. BMH - downstream for two fields from the bow bridge stream (bird sanctuary). The first field is only about 100 metres. Parking on the verge opposite Caps Lane or in the large lay-by on northern side of Cholsey and walk across the field to the bottom end of the reach, and effectively the top end of Fairmile. Fairmile - downstream from BMH to Ferry Lane in Cholsey. Parking as above and in ferry lane, and should be one side only to allow access for boats to be launched.",
+   "venue": {
+    "w3w": "feasting.clots.gear",
+    "at": {
+     "lat": 51.60728,
+     "lng": -1.11556,
+     "approx": false
+    }
+   },
+   "parking": [
+    {
+     "label": "Upstream parking",
+     "w3w": "serve.chest.departure",
+     "at": {
+      "lat": 51.605824,
+      "lng": -1.12181,
+      "approx": false
+     }
+    },
+    {
+     "label": "Downstream parking",
+     "w3w": "galloped.bridges.unfocused",
+     "at": {
+      "lat": 51.565236,
+      "lng": -1.134344,
+      "approx": false
+     }
+    }
+   ]
+  },
+  {
+   "slug": "wallingford-a-%26-b",
+   "url": "https://www.rdaa.co.uk/lake-venues/wallingford-a-%26-b",
+   "type": "river",
+   "name": "Wallingford A & B",
+   "ticket": "GENERAL PERMIT & BRONZE PERMIT NIGHT FISHING",
+   "postcodes": [
+    "OX10 8JY",
+    "OX10 6SL"
+   ],
+   "postcodeText": "(Cemetery Parking) OX10 8JY (Weir Footbridge) OX10 6SL",
+   "closeSeason": true,
+   "directions": "Side of road parking can be found at ///awaited.ounce.pylon or ///weeks.parade.fastening PARKING IS RATHER LIMITED AT THE DOWNSTREAM END. THE SMALL ROADWAY BETWEEN THE CEMETERY AND THE CHURCH CAN ACCOMMODATE 8/10 CARS, WHICH IF PARKED WITH CARE. DO NOT OBSTRUCT OTHER VEHICLES/TRACTORS ON THE ROADWAY (THEN FOOTPATH, DOWN TO THE RIVER)",
+   "info": "The Thames at Wallingford holds Barbel, Chub, Roach, Perch, Zander, Pike and most Thames species. LENGTH 3030 yrds No Close Season Fishing - CLOSED March 15th - June 15th PLEASE RESPECT LOCAL RESIDENTS ACCESS. General Permit - See permitted times under rules Night fishing is avalibale to BRONZE ticket holders. BE AWARE OF OLD PROTRUDING FORMER FENCE SPIKES. Wallingford A : GUEST TICKETS AVAILABLE, NO DAY TICKETS Wallingford B: GUEST & DAY TICKETS AVAILABLE",
+   "venue": {
+    "w3w": "hidden.retailing.alleges",
+    "at": {
+     "lat": 51.622049,
+     "lng": -1.125499,
+     "approx": false
+    }
+   },
+   "parking": [
+    {
+     "label": "Roadside parking",
+     "w3w": "awaited.ounce.pylon",
+     "at": {
+      "lat": 51.6162,
+      "lng": -1.113954,
+      "approx": false
+     }
+    },
+    {
+     "label": "Roadside parking",
+     "w3w": "weeks.parade.fastening",
+     "at": {
+      "lat": 51.605824,
+      "lng": -1.120551,
+      "approx": false
+     }
+    }
+   ]
+  },
+  {
+   "slug": "whistley-mill-river",
+   "url": "https://www.rdaa.co.uk/lake-venues/whistley-mill-river",
+   "type": "river",
+   "name": "Whistley Mill River (Lower Loddon)",
+   "ticket": "GENERAL PERMIT & BRONZE 24 HOUR PERMIT FISHING",
+   "postcodes": [
+    "RG10 0SS"
+   ],
+   "postcodeText": "RG10 0SS",
+   "closeSeason": true,
+   "directions": "Parking can be found at ///disbanded.spark.punctual (Middle) or ///caused.scooped.nozzle (Upstream)",
+   "info": "Crystal clear water in the summer months make this a frustrating water where you can watch the fish take in and eject your bait but rewards are good with Barbel to 14lbs plus and Chub approaching 8lbs. Best fished when fining down after flood. Though some swear by getting there as the levels are rising. CLOSED March 15th - June 15th General Permit - See permitted times under rules Night fishing on Bronze/South/North/Platinum permit only No Close Season Fishing GUEST TICKETS ONLY. No 24 hour guest tickets.",
+   "venue": {
+    "w3w": "compress.flannel.wiring",
+    "at": {
+     "lat": 51.465004,
+     "lng": -0.866662,
+     "approx": false
+    }
+   },
+   "parking": [
+    {
+     "label": "Middle parking",
+     "w3w": "disbanded.spark.punctual",
+     "at": {
+      "lat": 51.464842,
+      "lng": -0.867052,
+      "approx": false
+     }
+    },
+    {
+     "label": "Upstream parking",
+     "w3w": "caused.scooped.nozzle",
+     "at": {
+      "lat": 51.467861,
+      "lng": -0.866792,
+      "approx": false
+     }
+    }
+   ]
+  },
+  {
+   "slug": "whistley-mill-river-(lower-loddon)",
+   "url": "https://www.rdaa.co.uk/lake-venues/whistley-mill-river-(lower-loddon)",
+   "type": "river",
+   "name": "Whistley Mill River (Upper Loddon)",
+   "ticket": "GENERAL PERMIT",
+   "postcodes": [
+    "RG10 0SS"
+   ],
+   "postcodeText": "RG10 0SS",
+   "closeSeason": false,
+   "directions": "Side of road parking can be found at ///socket.dinner.noses or Downstream RDAA parking at ///disbanded.spark.punctual",
+   "info": "The river Loddon holds Barbel, Chub, Roach, Perch, Pike and most river species. General Permit - See permitted times under rules Night fishing is avalibale to Bronze ticket holders",
+   "venue": {
+    "w3w": "fade.punchy.paint",
+    "at": {
+     "lat": 51.45301,
+     "lng": -0.87619,
+     "approx": false
+    }
+   },
+   "parking": [
+    {
+     "label": "Roadside parking",
+     "w3w": "socket.dinner.noses",
+     "at": {
+      "lat": 51.449857,
+      "lng": -0.877272,
+      "approx": false
+     }
+    },
+    {
+     "label": "Downstream · RDAA car park",
+     "w3w": "disbanded.spark.punctual",
+     "at": {
+      "lat": 51.464842,
+      "lng": -0.867052,
+      "approx": false
+     }
+    }
+   ]
+  }
+ ]
+}
