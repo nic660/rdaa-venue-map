@@ -62,7 +62,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:1
 @media (prefers-reduced-motion: reduce){.loc.busy svg{animation:none;opacity:.5}}
 .me-dot{fill:#1a73e8;fill-opacity:1;stroke:#fff;stroke-width:3}
 .me-acc{fill:#1a73e8;fill-opacity:.12;stroke:#1a73e8;stroke-opacity:.35;stroke-width:1}
-.toast{position:absolute;left:12px;right:12px;bottom:54px;z-index:1200;margin:0;padding:10px 14px;border-radius:12px;background:var(--ink);color:var(--bg);font-size:14px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.toast{position:absolute;left:12px;right:12px;bottom:54px;z-index:1200;margin:0;padding:10px 14px;border-radius:12px;background:var(--ink);color:var(--bg);font-size:14px;box-shadow:0 4px 14px rgba(0,0,0,.25);cursor:pointer}
 @media (min-width:700px){.toast{left:auto;width:360px}}
 .pin.closed .tip{fill:#9aa59f}
 .pin.closed svg{opacity:.7}

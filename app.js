@@ -266,8 +266,9 @@ function toast(msg) {
   t.textContent = msg;
   t.hidden = false;
   clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => { t.hidden = true; }, 7000);
+  toastTimer = setTimeout(() => { t.hidden = true; }, 12000);
 }
+$("toast").onclick = () => { $("toast").hidden = true; };
 
 function locate() {
   if (!navigator.geolocation) return toast("This browser can't share your location.");
@@ -296,13 +297,35 @@ map.on("locationfound", e => {
   }
 });
 
+// What to do when location fails, worded for the device and browser in use.
+// code 1 = permission refused; anything else = no fix (location off, no signal, timed out).
+function locationHelp(code, ua = navigator.userAgent, touchPoints = navigator.maxTouchPoints || 0) {
+  const ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && touchPoints > 1);
+  const android = /Android/.test(ua);
+  const mac = /Macintosh/.test(ua) && !ios;
+  const browser = /Edg\//.test(ua) ? "Edge" : /CriOS|Chrome\//.test(ua) ? "Chrome"
+    : /FxiOS|Firefox\//.test(ua) ? "Firefox" : "Safari";
+  const macSettings = `${browser} is turned on in System Settings › Privacy & Security › Location Services`;
+
+  if (code !== 1) {
+    if (ios || android) return "Couldn't find your location. Check Location Services is on, or try again with a better signal.";
+    return "Couldn't find your location. " + (mac ? `Check ${macSettings}.` : "Check location is turned on for your browser.");
+  }
+  if (ios) {
+    const app = browser === "Safari" ? "Safari Websites" : browser;
+    return `Location is turned off for ${browser === "Safari" ? "this site" : browser}. Open Settings › Privacy & Security › Location Services › ${app}, then try again.`;
+  }
+  if (android) return "Location is blocked for this site. Tap the icon to the left of the address bar, allow Location, then try again.";
+  const onMac = mac ? ` On a Mac, also check ${macSettings}.` : "";
+  if (browser === "Safari") return "Location is blocked for this site. In Safari › Settings › Websites › Location, allow this site, then try again." + onMac;
+  return "Location is blocked for this site. Click the icon to the left of the address bar, allow Location, then try again." + onMac;
+}
+
 map.on("locationerror", e => {
   map.stopLocate();
   locating = false;
   $("locate").classList.remove("busy", "on");
-  toast(e.code === 1
-    ? "Location is turned off for this site. On iPhone: Settings › Privacy & Security › Location Services › Safari Websites, then try again."
-    : "Couldn't find your location. Check Location Services is on, or try again with a better signal.");
+  toast(locationHelp(e.code));
 });
 
 document.addEventListener("visibilitychange", () => {
