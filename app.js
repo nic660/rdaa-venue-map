@@ -12,8 +12,17 @@ const link = {
 };
 
 const PIN_SVG = `<svg viewBox="0 0 30 38" aria-hidden="true"><line class="stem" x1="15" y1="29" x2="15" y2="37"/><path class="body" d="M15 2c5 0 8 6 8 14s-3 13-8 13-8-5-8-13 3-14 8-14z"/><path class="tip" d="M15 2c5 0 8 6 8 11H7c0-5 3-11 8-11z"/></svg>`;
+// Closed now: a closure notice in the venue news, or today falls in its stated close season.
+function inCloseSeason(v, today = new Date()) {
+  const m = /(\d+) Mar – (\d+) Jun/.exec(v.closeSeason || "");
+  if (!m) return false;
+  const y = today.getFullYear();
+  return today >= new Date(y, 2, +m[1]) && today < new Date(y, 5, +m[2] + 1);
+}
+const closedNow = v => v.closedNotice || inCloseSeason(v);
+
 const pinIcon = (v, selected) => L.divIcon({
-  className: `pin t-${v.type}` + (selected ? " sel" : "") + (v.venue.at.approx ? " approx" : ""),
+  className: `pin t-${v.type}` + (selected ? " sel" : "") + (v.venue.at.approx ? " approx" : "") + (closedNow(v) ? " closed" : ""),
   html: PIN_SVG, iconSize: [30, 38], iconAnchor: [15, 38],
 });
 
@@ -105,7 +114,7 @@ function reveal(m, center) {
 }
 
 const matches = v => shown.has(v.type) && (!query ||
-  [v.name, TYPES[v.type][1], v.postcodes.join(" "), v.info, v.ticket].join(" ").toLowerCase().includes(query));
+  [v.name, TYPES[v.type][1], v.postcodes.join(" "), v.info, v.ticket, v.news].join(" ").toLowerCase().includes(query));
 
 function renderTypeChips() {
   $("types").innerHTML = Object.entries(TYPES).map(([t, [label]]) =>
@@ -152,6 +161,14 @@ function w3wRow(label, words, at, withDrive, clubSays) {
   return `<li><span class="lab">${esc(label)}</span><a class="words" href="${pos ? link.apple(at, words) : link.w3w(words)}" target="_blank" rel="noopener"><i>///</i>${esc(words)}</a><span class="acts">${acts}</span>${fix}</li>`;
 }
 
+function newsBanner(v) {
+  if (v.closedNotice) return `<div class="news bad"><b>Closed</b>${esc(v.news)}</div>`;
+  if (inCloseSeason(v)) {
+    return `<div class="news bad"><b>Closed</b>Close season, ${esc(v.closeSeason.replace(" – ", " to "))}.${v.news ? " " + esc(v.news) : ""}</div>`;
+  }
+  return v.news ? `<div class="news"><b>Venue news</b>${esc(v.news)}</div>` : "";
+}
+
 function select(v, { zoomTo = false } = {}) {
   const prev = sel;
   sel = v;
@@ -163,7 +180,7 @@ function select(v, { zoomTo = false } = {}) {
   const meta = [
     `<span class="m type t-${v.type}"><i></i>${TYPES[v.type][1]}</span>`,
     v.ticket && `<span class="m">${esc(ticketText(v.ticket))}</span>`,
-    v.closeSeason && `<span class="m warn">Closed 15 Mar – 15 Jun</span>`,
+    v.closeSeason && `<span class="m warn">Close season ${esc(v.closeSeason)}</span>`,
     ...v.postcodes.map(pc => `<span class="m">${esc(pc)}</span>`),
   ].filter(Boolean).join("");
 
@@ -172,6 +189,7 @@ function select(v, { zoomTo = false } = {}) {
     <div class="grab"></div>
     <div class="sh-head"><h2>${esc(v.name)}</h2><button class="x" type="button" aria-label="Close" id="close">✕</button></div>
     <div class="meta">${meta}</div>
+    ${newsBanner(v)}
     ${drive
       ? `<p class="navlbl">Drive to: ${esc(drive.label)}</p>
          <div class="nav"><a class="go" href="${link.google(drive.at)}" target="_blank" rel="noopener">Google Maps</a><a class="go alt" href="${link.waze(drive.at)}" target="_blank" rel="noopener">Waze</a></div>`
@@ -208,7 +226,7 @@ function closeSheet() {
 function renderList() {
   const rows = venues.filter(matches);
   $("list").innerHTML = (rows.length
-    ? rows.map(v => `<button class="row" type="button" data-slug="${esc(v.slug)}"><b>${esc(v.name)}</b><small><i class="dot t-${v.type}"></i>${esc([TYPES[v.type][1], v.postcodes[0] || "No postcode", v.ticket && ticketText(v.ticket)].filter(Boolean).join(" · "))}</small><span class="r${v.venue.at ? "" : " miss"}">${v.venue.at ? "Map ›" : "Not on map"}</span></button>`).join("")
+    ? rows.map(v => `<button class="row" type="button" data-slug="${esc(v.slug)}"><b>${esc(v.name)}</b><small><i class="dot t-${v.type}"></i>${esc([TYPES[v.type][1], v.postcodes[0] || "No postcode", v.ticket && ticketText(v.ticket)].filter(Boolean).join(" · "))}</small><span class="r${!v.venue.at ? " miss" : closedNow(v) ? " shut" : ""}">${!v.venue.at ? "Not on map" : closedNow(v) ? "Closed" : "Map ›"}</span></button>`).join("")
     : `<p class="empty">${query ? `No venue matches “${esc(query)}”.` : "No venue types selected. Turn on Rivers, Lakes or Canals above."}</p>`)
     + `<p class="foot">${venues.length} venues from rdaa.co.uk, last checked ${esc(window.scraped || "")}.</p>`;
   $("list").querySelectorAll("[data-slug]").forEach(b =>
@@ -237,6 +255,62 @@ $("q").addEventListener("input", e => {
   drawMarkers();
   if (!$("list").hidden) renderList();
 });
+
+// My location: the phone asks permission on the first tap. The dot follows you while
+// the app is open and stops while it's in the background, to save battery.
+const LOCATE = { watch: true, setView: false, enableHighAccuracy: true, maximumAge: 15000, timeout: 20000 };
+let locating = false, centreOnFix = false, meDot = null, meAcc = null, toastTimer = null;
+
+function toast(msg) {
+  const t = $("toast");
+  t.textContent = msg;
+  t.hidden = false;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { t.hidden = true; }, 7000);
+}
+
+function locate() {
+  if (!navigator.geolocation) return toast("This browser can't share your location.");
+  centreOnFix = true;
+  if (meDot) map.setView(meDot.getLatLng(), Math.max(map.getZoom(), 14));
+  if (!locating) {
+    locating = true;
+    $("locate").classList.add("busy");
+    map.locate(LOCATE);
+  }
+}
+
+map.on("locationfound", e => {
+  $("locate").classList.remove("busy");
+  $("locate").classList.add("on");
+  if (!meDot) {
+    meAcc = L.circle(e.latlng, { radius: e.accuracy, className: "me-acc", interactive: false }).addTo(map);
+    meDot = L.circleMarker(e.latlng, { radius: 8, className: "me-dot", interactive: false }).addTo(map);
+  } else {
+    meDot.setLatLng(e.latlng);
+    meAcc.setLatLng(e.latlng).setRadius(e.accuracy);
+  }
+  if (centreOnFix) {
+    centreOnFix = false;
+    map.setView(e.latlng, Math.max(map.getZoom(), 14));
+  }
+});
+
+map.on("locationerror", e => {
+  map.stopLocate();
+  locating = false;
+  $("locate").classList.remove("busy", "on");
+  toast(e.code === 1
+    ? "Location is turned off for this site. On iPhone: Settings › Privacy & Security › Location Services › Safari Websites, then try again."
+    : "Couldn't find your location. Check Location Services is on, or try again with a better signal.");
+});
+
+document.addEventListener("visibilitychange", () => {
+  if (!locating) return;
+  if (document.hidden) map.stopLocate();
+  else map.locate(LOCATE);
+});
+$("locate").onclick = locate;
 
 // Without the overview file the app still works, just with the street map at every zoom.
 fetch("overview.json")

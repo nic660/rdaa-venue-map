@@ -37,7 +37,9 @@
   <main class="main">
     <div id="map" class="map" aria-label="Map of venues"></div>
     <button id="fitAll" class="fit" type="button" aria-label="Show all venues">All</button>
+    <button id="locate" class="fit loc" type="button" aria-label="Show my location" title="Show my location"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="8" fill="none"/><path d="M12 1v3M12 20v3M1 12h3M20 12h3" fill="none"/></svg></button>
     <p id="hint" class="hint" hidden>Zoom in for the street map</p>
+    <p id="toast" class="toast" role="status" hidden></p>
     <div id="list" class="list" hidden></div>
     <section id="sheet" class="sheet" hidden aria-live="polite"></section>
   </main>

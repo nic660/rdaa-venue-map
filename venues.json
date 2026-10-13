@@ -1,5 +1,5 @@
 {
- "scraped": "2026-10-11",
+ "scraped": "2026-10-13",
  "venues": [
   {
    "slug": "beat-1-canal",
@@ -11,7 +11,9 @@
     "RG30 3RB"
    ],
    "postcodeText": "RG30 3RB",
-   "closeSeason": false,
+   "closeSeason": "15 Mar – 16 Jun",
+   "news": "",
+   "closedNotice": false,
    "directions": "Side of the road parking can be found at ///forest.calls.forced",
    "info": "Beat 1 is a canal section where target species consist of Roach, Perch, Chub, Skimmers, Pike and the occasional Carp. General permit - see permitted times Night fishing is avalibale to Bronze ticket holders. Closed March 15th - June 16th",
    "venue": {
@@ -44,7 +46,9 @@
     "RG30 3UN"
    ],
    "postcodeText": "RG30 3UN",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "Parking can be found at ///closer.looked.envy Once parked, follow the Public footpath North to the river.",
    "info": "One of our more productive beats for good size barbel and chub with some decent roach and perch and the occasional bream. General Permit - see permitted times Night fishing is avalibable to Bronze ticket holders",
    "venue": {
@@ -77,7 +81,9 @@
     "RG7 0RP"
    ],
    "postcodeText": "RG7 0RP",
-   "closeSeason": false,
+   "closeSeason": "15 Mar – 16 Jun",
+   "news": "",
+   "closedNotice": false,
    "directions": "Parking can be found at ///keeps.bridge.using",
    "info": "Beat 3a is a canal section where target species consist of Roach, Perch, Chub, Skimmers and Pike. General permit - see permitted times Night fishing is avalibale to Bronze permit holders. Closed 15th March - 16th June",
    "venue": {
@@ -110,7 +116,9 @@
     "RG7 0RP"
    ],
    "postcodeText": "RG7 0RP",
-   "closeSeason": true,
+   "closeSeason": "15 Mar – 15 Jun",
+   "news": "",
+   "closedNotice": false,
    "directions": "Parking can be found at ///keeps.bridge.using",
    "info": "Beat 3B. section is also known as the backwater, holding barbel and chub to specimen sizes with reasonable numbers stocks of roach, dace and perch. Also some big pike reported in recent years. General Permit - see permitted times Night fishing is avalibale to Bronze Ticket Holders. CLOSED March 15th - June 15th GUEST & DAY TICKETS AVAILABLE",
    "venue": {
@@ -143,7 +151,9 @@
     "RG2 0HP"
    ],
    "postcodeText": "RG2 0HP",
-   "closeSeason": true,
+   "closeSeason": "15 Mar – 15 Jun",
+   "news": "",
+   "closedNotice": false,
    "directions": "Upstream parking can be found at ///keeps.bridge.using Downstream parking can be found at ///spot.stir.strut",
    "info": "A mixed fishery that has produced specimen sized barbel and chub along with some good catches of bream at times. There’s a reasonable head of roach, dace and perch with stick float tactics usually the favoured method. LENGTH 1350 yds, some double bank. A Section from Fobney Island end of Beat 3 to A33 Bridge. B Section from A33 bridge to White Bridge (Beat 5). General permit - see permitted times Night fishing is avalibale to Bronze Permit holders CLOSED March 15th - June 15th GUEST & DAY TICKETS AVAILABLE",
    "venue": {
@@ -185,7 +195,9 @@
     "RG2 0JZ"
    ],
    "postcodeText": "RG2 0JZ",
-   "closeSeason": true,
+   "closeSeason": "15 Mar – 15 Jun",
+   "news": "",
+   "closedNotice": false,
    "directions": "Parking can be found at ///spot.stir.strut",
    "info": "The swims up from the Berkeley Avenue Road Bridge are known for chub with the occasional large barbel. Roach, dace and perch are present in good numbers at certain times and even trout can be found this far downstream. A Section from White Bridge to Holybrook mouth. B Section from Holybrook mouth to end of venue. General permit - see permitted times Night fishing is avalibale to Bronze Permit holders CLOSED March 15th - June 15th GUEST & DAY TICKETS AVAILABLE",
    "venue": {
@@ -218,7 +230,9 @@
     "RG30 3UW"
    ],
    "postcodeText": "RG30 3UW",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "///normal.crown.times",
    "info": "Situated between Farnham Flint and Englefield lagoon this small uncomplicated venue is just right for pleasure anglers and beginners. No driving or parking vehicles anywhere other than marked car parks. See permitted times under rules OPEN ALL YEAR GUEST TICKETS ONLY",
    "venue": {
@@ -251,7 +265,9 @@
     "RG30 3RB"
    ],
    "postcodeText": "RG30 3RB",
-   "closeSeason": true,
+   "closeSeason": "15 Mar – 15 Jun",
+   "news": "",
+   "closedNotice": false,
    "directions": "///vast.backs.sounds",
    "info": "Proves popular throughout the year with roving lure anglers reporting specimen perch and chub to their lures. Those that do venture out for a dedicated session are often rewarded with decent catches of silvers. LENGTH 570yrds See permitted times under rules CLOSED March 15th - June 15th GUEST & DAY TICKETS AVAILABLE",
    "venue": {
@@ -284,7 +300,9 @@
     "RG30 3RB"
    ],
    "postcodeText": "RG30 3RB",
-   "closeSeason": true,
+   "closeSeason": "15 Mar – 15 Jun",
+   "news": "",
+   "closedNotice": false,
    "directions": "Side of road parking can be found at ///rises.town.wages (Upstream) and ///forest.calls.forced (Downstream)",
    "info": "A good mixed fishery which has produced barbel to over 14lbs and chub to well over 6lbs in recent seasons. Decent stick float fishing for roach, perch and dace at times and the occasional big trout and specimen roach. The area below the lock is a useful back up spot when the main river is in flood and often holds good pike plus some reasonable perch and big chub. General Permit - See permitted times under rules Night Fishing is avalibale to Bronze Permit holders CLOSED March 15th - June 15th GUEST & DAY TICKETS AVAILABLE",
    "venue": {
@@ -326,7 +344,9 @@
     "RG30 3TA"
    ],
    "postcodeText": "RG30 3TA",
-   "closeSeason": true,
+   "closeSeason": "15 Mar – 15 Jun",
+   "news": "",
+   "closedNotice": false,
    "directions": "Parking can be found at ///bugs.animal.meant",
    "info": "A good mixed fishery with secure car parking holding some specimen sized barbel particularly on the upstream end (Arrowhead) with the deeper downstream end holding good numbers of quality bream and perch and the occasion big carp. Chub are in reasonable numbers all the way through the venue with fish to 8lbs together with some quality roach. General Permit - See permitted times under rules Night fishing is avalibale to Bronze Permit holders CLOSED March 15th - June 15th GUEST & DAY TICKETS AVAILABLE",
    "venue": {
@@ -359,7 +379,9 @@
     "RG30 3UW"
    ],
    "postcodeText": "RG30 3UW",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "///normal.crown.times",
    "info": "This is our coaching pool designed to teach beginners and youngsters but open to all on non-coaching days. It is well stocked with crucians and tench plus a high content of small rudd. Try something other than maggot on the hook for the bigger fish. ONE ROD AND FLOAT FISHING ONLY. PLEASE REFER TO ON SITE RULES. FISHING FROM PLATFORMS ONLY GUEST TICKETS ONLY - NO DAY TICKETS General Permit - See permitted times under rules",
    "venue": {
@@ -392,7 +414,9 @@
     "RG30 3UN"
    ],
    "postcodeText": "RG30 3UN",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "///closer.looked.envy",
    "info": "Lake 1 on the left is dedicated to more of a 'Carp fishing' approach. Lake 2 on the right is more of a mixed fishery with Tench, Roach, Rudd & Bream. Night fishing is available to Bronze ticket holders. General Permit - See permitted times under rules OPEN ALL YEAR 2 ROD LIMIT NO BAIT BOATS GUEST TICKETS ONLY. No 24 hour guest tickets.",
    "venue": {
@@ -425,7 +449,9 @@
     "RG7 4HQ"
    ],
    "postcodeText": "RG7 4HQ",
-   "closeSeason": true,
+   "closeSeason": "15 Mar – 15 Jun",
+   "news": "",
+   "closedNotice": false,
    "directions": "Upstream parking - ///coverings.hops.maximum Downstream parking - ///divible.crust.manifests",
    "info": "Specimen and pleasure anglers get returns by way of decent Chub, Perch and the occasional Tench. General Permit - See permitted times under rules CLOSED March 15th - June 15th GUEST & DAY TICKETS AVAILABLE",
    "venue": {
@@ -468,7 +494,9 @@
     "RG30 3UW"
    ],
    "postcodeText": "RG30 3UW",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "Parking at Searles farm lane - ///prime.dawn.mercy Parking at Berrys lane - ///lonely.loses.hiking Parking at Kirtons farm lane - ///normal.crown.times",
    "info": "At 47 acres, this is no easy venue, though the rewards are there for the triers. Past captures of Carp into the 50’s as well as once holding the national Bream record at the same time as threatening the National Tench record. Good stillwater roach show all year as well as good numbers of pike during the winter months. No zig rigs or hooklinks in excess of 500mm between the 1 st April-1 st October No driving or parking vehicles anywhere other than marked car parks. Night fishing available to South/Platinum ticket holders only General Permit - See permitted times under rules OPEN ALL YEAR 3 ROD LIMIT NO BAIT BOATS GUEST TICKETS ONLY. No 24 hour guest tickets.",
    "venue": {
@@ -519,7 +547,9 @@
     "RG30 3UW"
    ],
    "postcodeText": "RG30 3UW",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "Parking at Searles Farm Lane - ///pilots.stews.pound Parking at Kirtons Farm lane - ///normal.crown.times",
    "info": "This lake venue has a history as a big fish water with large Carp, Pike, Bream, Roach and Tench. Room for everyone on this 42 acre pit, swims marked are reserved for fishing daylight hours only. There is also level access swims near the main car park. No zig rigs or hooklinks in excess of 500mm between the 1 st April-1 st October No driving or parking vehicles anywhere other than marked car parks The site has an on site cafe which is usually open on Tuesday, Thursday, Friday and on Saturday mornings (see Facebook page for variations in opening hours) with entrance from the large green double gates in Cottage Lane. When these gates are closed the venue can be accessed via the locked club gate in Kirton’s Farm Road. On site toilet located next to the cafe. Night fishing avalible to South/Platinum ticket holders only General Permit - See permitted times under rules OPEN ALL YEAR 3 ROD LIMIT NO BAIT BOATS",
    "venue": {
@@ -561,7 +591,9 @@
     "SN8 3JU"
    ],
    "postcodeText": "SN8 3JU",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "Side of road parking upstream - ///stiff.gracing.waxer and downstream at ///gasp.motored.jumbo",
    "info": "Good fishing all year round and 20lb bags possible during the winter months. All expected species show in good numbers and specimen sizes with some very good roach coming through in recent years. Lure anglers enjoy this venue for its quality perch and numbers of pike. Good shoals of bream and Tench are present on all sections. LENGTH 2820 yrds General Permit - See permitted times under rules Open all year GUEST & DAY TICKETS AVAILABLE",
    "venue": {
@@ -603,7 +635,9 @@
     "RG30 3TA"
    ],
    "postcodeText": "RG30 3TA",
-   "closeSeason": true,
+   "closeSeason": "15 Mar – 15 Jun",
+   "news": "",
+   "closedNotice": false,
    "directions": "Parking can be found at bugs.animal.meant",
    "info": "An ideal venue for those that like to stalk small river/stream chub and barbel. Best fish in warmer months if the main river is in flood, chances of decent roach and perch too. General Permit - See permitted times under rules CLOSED March 15th - June 15th GUEST & DAY TICKETS AVAILABLE",
    "venue": {
@@ -634,7 +668,9 @@
    "ticket": "Exclusive Booking only",
    "postcodes": [],
    "postcodeText": "",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "",
    "info": "Exclusive bookings only.",
    "venue": {
@@ -653,7 +689,9 @@
     "RG2 6GP"
    ],
    "postcodeText": "RG2 6GP",
-   "closeSeason": true,
+   "closeSeason": "15 Mar – 15 Jun",
+   "news": "Anglers must book in with reception located at building 100, before fishing.",
+   "closedNotice": false,
    "directions": "Parking can be found at ///appeal.volunteered.myself YOU MUST REPORT TO RECEPTION AT BUILDING 100 LONGWATER AVENUE BEFORE FISHING.",
    "info": "A true urban fishery, situated within the safe grounds of Green park office development. Some incredible catch reports come through for this venue with fishing for all available. With very large carp for the specimen carpers, great shoals of bream, rudd and roach with some magnificent Pike captures of late. CLOSED March 15th - June 15th There is no close season fishing on this venue or night fishing though fishing 7am to end off daylight hours only is permitted. ALL ANGLERS TO BOOK IN WITH SECURITY 0118 945 0006 No driving or parking vehicles anywhere other than marked car parks. OPEN ALL YEAR NO DOGS NO KEEPNETS TOILET ON SITE LEVEL ACCESS PEGS ON VENUE FISHING FROM 7AM TO END OFF DAYLIGHT HOURS NO GUEST OR DAY TICKETS",
    "venue": {
@@ -686,7 +724,9 @@
     "RG7 5HH"
    ],
    "postcodeText": "RG7 5HH",
-   "closeSeason": true,
+   "closeSeason": "15 Mar – 15 Jun",
+   "news": "",
+   "closedNotice": false,
    "directions": "Side of road parking can be found at ///scare.hooked.brands (Downstream) or ///hoping.amber.reveal (Upstream) which is a public car park",
    "info": "Divided into three sections all of which have produced specimen barbel, perch and chub. A historic venue, deeply seated in the annals of barbel fishing, with plenty of cover, deep bends and attractive fish holding features. This venue holds the current RDAA records for Barbel and Brown Trout. General Permit - See permitted times under rules NO NIGHT FISHING CLOSED March 15th - June 15th GUEST TICKETS AVAILABLE NO DAY TICKETS",
    "venue": {
@@ -728,7 +768,9 @@
     "RG7 5XA"
    ],
    "postcodeText": "RG7 5XA",
-   "closeSeason": true,
+   "closeSeason": "15 Mar – 15 Jun",
+   "news": "",
+   "closedNotice": false,
    "directions": "Side of road parking at ///alpha.agreed.mankind",
    "info": "An interesting venue, a good all season fishery with Carp, Chub, Bream, Roach, Perch and Pike to specimen sizes throughout with a chance of small barbel at the stream inlet. Some large carp have been known to make an appearance in recent years The bottom section is fished from the other bank with access being made by crossing the lock. LENGTH 1170yrds General Permit - See permitted times under rules No Close Season Fishing - CLOSED March 15th - June 15th GUEST & DAY TICKETS AVAILABLE",
    "venue": {
@@ -761,7 +803,9 @@
     "RG30 3TA"
    ],
    "postcodeText": "RG30 3TA",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "Parking can be found at ///dart.tolls.drill or ///photos.goes.boxer",
    "info": "Most noted for it’s good head of Tench, though does feature on the predator anglers favourite venues during the winter. 15MPH SPEED LIMIT No driving or parking vehicles anywhere other than marked car parks. TIMES 1hr before sunrise to 1hr after sunset or 9pm (whichever is later) Night fishing is available to General permit holders OPEN ALL YEAR 2 ROD LIMIT NO BAIT BOATS THERE ARE 2 LOCKS ON ACCESS GATE, BE SURE YOU ARE USING THE CORRECT ONE GUEST TICKETS ONLY. No 24 hour guest tickets.",
    "venue": {
@@ -803,7 +847,9 @@
     "OX29 5AT"
    ],
    "postcodeText": "OX29 5AT",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "Parking can be found at calculate.toward.dried or Upstream at the Ferryman pub at a cost of £5 truck.ramp.maddening",
    "info": "Venue only Permits for this fishery are available from info@rdda.co.uk General Permit - See permitted times under rules",
    "venue": {
@@ -845,7 +891,9 @@
     "RG7 4LL"
    ],
    "postcodeText": "RG7 4LL",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "VENUE CURRENTLY CLOSED",
+   "closedNotice": true,
    "directions": "///financial.glaze.heave",
    "info": "This venue can be night fished on a General permit at no extra cost. No dogs are allowed.",
    "venue": {
@@ -878,7 +926,9 @@
     "RG30 3UN"
    ],
    "postcodeText": "RG30 3UN",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "Parking can be found at Berrys Lane ///paper.wires.fine or Kirton Farm Lane ///skirt.swift.crowds",
    "info": "Pingewood is renowned for big Carp fishing, Specimen Tench and Bream which are also present. No zig rigs or hooklinks in excess of 500mm between the 1 st April-1 st October. No driving or parking vehicles anywhere other than marked car parks. General Permit - See permitted times under rules Night fishing is available to SOUTH PERMIT/PLATINUM holders only OPEN ALL YEAR 3 ROD LIMIT NO BAIT BOATS GUEST TICKETS ONLY",
    "venue": {
@@ -922,7 +972,9 @@
     "RG7 1TB"
    ],
    "postcodeText": "RG7 1TB",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "Upstream parking ///data.streaking.wiped Downstream parking ///linen.levels.inner",
    "info": "The Blackwater permits are available online here via Clubmate (including the lock combination codes for the southern farm gate). THIS IS NOT AN OPEN ACCESS FISHERY AND PERMITS MUST BE BOOKED OUT IN ADVANCE",
    "venue": {
@@ -964,7 +1016,9 @@
     "RG7 4LQ"
    ],
    "postcodeText": "RG7 4LQ",
-   "closeSeason": true,
+   "closeSeason": "15 Mar – 15 Jun",
+   "news": "",
+   "closedNotice": false,
    "directions": "Side of the road parking can be found at ///universes.recur.snowy",
    "info": "Split into 2 sections with the upper section having a slight river influence and as a result has thrown up some specimen dace,Roach hybrids and good chub in the past. Good average match bags throughout the venue with Perch, Tench and Bream showing fairly regularly. The bottom end comes into it’s own during the colder months with good perch and Roach captures coming from the moored boat areas. LENGTH 1770yrds General Permit - See permitted times under rules CLOSED March 15th - June 15th GUEST & DAY TICKETS AVAILABLE",
    "venue": {
@@ -997,7 +1051,9 @@
     "OX1 5RP"
    ],
    "postcodeText": "OX1 5RP",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "Public parking can be found at ///regrowth.sketch.period",
    "info": "RDAA and Littlemore A.S.( www.littlemoreanglingsociety.co.uk ) have agreed to share their waters at Sandford in the Oxford area. This will not include match days, RDAA members please check Littlemore Match Booking dates which can be found on our website before fishing.",
    "venue": {
@@ -1030,7 +1086,9 @@
     "OX1 5RP"
    ],
    "postcodeText": "OX1 5RP",
-   "closeSeason": true,
+   "closeSeason": "15 Mar – 15 Jun",
+   "news": "",
+   "closedNotice": false,
    "directions": "Parking can be found at ///detail.upcoming.motivator",
    "info": "The Thames at Sandford is renowned for species such as Barbel, Chub, Roach, Perch, Silver Bream, Pike and the occasional Carp. LENGTH 1093yrds No Close Season Fishing - CLOSED March 15th - June 15th GUEST & DAY TICKETS AVAILABLE NIGHT FISHING PERMITTED ON GENERAL PERMIT Sandford Weir Venue RDAA and Littlemore A.S.( www.littlemoreanglingsociety.co.uk ) have agreed to share their waters at Sandford in the Oxford area. This will not include match days, RDAA members please check Littlemore Match Booking dates before fishing.",
    "venue": {
@@ -1063,7 +1121,9 @@
     "RG4 6TU"
    ],
    "postcodeText": "RG4 6TU",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "Parking can be found at ///simply.stroke.filed There is also a small area for parking at the Northern end of the lake ///rapid.pulse.grass",
    "info": "CARP OF 50LB PLUS ARE RUMOURED TO HAVE BEEN CAUGHT IN RECENT YEARS Large Eels have also been reported and a good number of decent perch. Very popular in winter with pike anglers. Useful for lesser able bodied anglers as the top swims can be parked in making it possible to more or less fish from the car. LEVEL ACCESS PEGS (TOP OF FISHERY) OPEN ALL YEAR General Permit - See permitted times under rules Night fishing is avalibale to North/Platinum ticket holders only. 3 ROD LIMIT BAIT BOATS ARE PERMITTED GUEST TICKETS ONLY",
    "venue": {
@@ -1105,7 +1165,9 @@
     "RG4 6TU"
    ],
    "postcodeText": "RG4 6TU",
-   "closeSeason": true,
+   "closeSeason": "15 Mar – 15 Jun",
+   "news": "",
+   "closedNotice": false,
    "directions": "Parking can be found at ///simply.stroke.filed There is also a small area for parking at the Northern end of the lake ///rapid.pulse.grass",
    "info": "The Thames at Sonning is renowned for species such as Chub, Roach, Perch, Bream, Pike and the occasional Carp. LENGTH 1450 yrds CLOSED March 15th - June 15th General Permit - See permitted times under rules Night fishing is avalibale to BRONZE TICKET HOLDERS.",
    "venue": {
@@ -1145,7 +1207,9 @@
    "ticket": "GENERAL PERMIT",
    "postcodes": [],
    "postcodeText": "",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "Upstream parking ///galloped.bridges.unfocused Downstream parking ///scorching.package.announce",
    "info": "We have agreed to take over the maintenance and bailiffing of both the LAA stretches at South Stoke (East Bank) and Cholsey (West Bank) - approximately 1.3 miles in total. South Stoke is an easy walk and is well known for its quality roach fishing. Some big shoals of bream are also present along with good chub and pike. Access is via the track at the end of Ferry Road, South Stoke and just beyond the Perch and Pike pub. Park on the right of the track before the river. The railway bridge marks upstream boundary on the East Bank.",
    "venue": {
@@ -1187,7 +1251,9 @@
     "RG7 4BD"
    ],
    "postcodeText": "RG7 4BD",
-   "closeSeason": true,
+   "closeSeason": "15 Mar – 15 Jun",
+   "news": "",
+   "closedNotice": false,
    "directions": "Parking can be found at ///vast.backs.sounds",
    "info": "A canal venue that can have some good flow at the top end making it a good venue when the river is up and running. Big perch and chub show throughout as do roach and tench. LENGTH 950yrds General Permit - See permitted times under rules CLOSED March 15th - June 15th GUEST & DAY TICKETS AVAILABLE",
    "venue": {
@@ -1220,7 +1286,9 @@
     "RG7 4BD"
    ],
    "postcodeText": "RG7 4BD",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "Parking can be found at vast.backs.sounds",
    "info": "This stretch holds some large barbel to over 16lbs and chub to 7lbs, particularly at the upstream end and lower down near the canal mouth. Specimen perch are present throughout, along with the occasional tench and some bream. At times good bags of roach and dace will fall to stick float tactics. General Permit - See permitted times under rules Night fishing is avalibale to Bronze ticket holders",
    "venue": {
@@ -1253,7 +1321,9 @@
     "RG7 4HG"
    ],
    "postcodeText": "RG7 4HG",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "Parking can be found at hobbyists.comb.selling (Upstream) or broke.agree.atoms (Downstream)",
    "info": "A productive, double banked section of largely canalised river holding chub, barbel and perch in reasonable numbers and to specimen sizes. The upper section is faster flowing and fishes well in the Summer and Autumn for roach, dace and chub. The lower section is much deeper and fishes well in winter months. Large dace can show here in good bags with roach in numbers along with trout. There are some big carp and bream here too and the occasional grayling. General Permit - See permitted times under rules Night fishing is avalibale to Bronze ticket holders.",
    "venue": {
@@ -1295,7 +1365,9 @@
     "RG7 4HY"
    ],
    "postcodeText": "RG7 4HY",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "Upstream side of road parking can be found at ///throw.sinkhole.horns or Upstream RDAA car park at ///coverings.hops.maximum Downstream RDAA parking at ///hobbyists.comb.selling",
    "info": "Perhaps one of the most stunning stretches of the Lower Kennet with fast runs and attractive, sweeping bends. Historically this was the most prolific barbel stretch on the whole river but is now a venue in transition. Large barbel and chub can still be found along with very large wild brown trout and some decent pike. Perch can be found to specimen sizes and there are shoals of dace and roach on the lower sections with a number of good fish amongst them. Grayling have been stocked recently and seem to be doing well. General Permit - See permitted times under rules Night fishing is avalibale to Bronze ticket holders.",
    "venue": {
@@ -1344,7 +1416,9 @@
    "ticket": "GENERAL PERMIT",
    "postcodes": [],
    "postcodeText": "",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "Upstream parking ///serve.chest.departure Downstream parking ///galloped.bridges.unfocused",
    "info": "Town Waters - from the three firs (downstream end of RDAA Wallingford water) to the wooden bridge. Parking in the cemetery lane. Chalmore - one field upstream and two fields downstream of the western side of the Wallingford bypass bridge. Parking is on the footpath on the downstream side of the bridge. Cars should be fully off the road. BMH - downstream for two fields from the bow bridge stream (bird sanctuary). The first field is only about 100 metres. Parking on the verge opposite Caps Lane or in the large lay-by on northern side of Cholsey and walk across the field to the bottom end of the reach, and effectively the top end of Fairmile. Fairmile - downstream from BMH to Ferry Lane in Cholsey. Parking as above and in ferry lane, and should be one side only to allow access for boats to be launched.",
    "venue": {
@@ -1387,7 +1461,9 @@
     "OX10 6SL"
    ],
    "postcodeText": "(Cemetery Parking) OX10 8JY (Weir Footbridge) OX10 6SL",
-   "closeSeason": true,
+   "closeSeason": "15 Mar – 15 Jun",
+   "news": "",
+   "closedNotice": false,
    "directions": "Side of road parking can be found at ///awaited.ounce.pylon or ///weeks.parade.fastening PARKING IS RATHER LIMITED AT THE DOWNSTREAM END. THE SMALL ROADWAY BETWEEN THE CEMETERY AND THE CHURCH CAN ACCOMMODATE 8/10 CARS, WHICH IF PARKED WITH CARE. DO NOT OBSTRUCT OTHER VEHICLES/TRACTORS ON THE ROADWAY (THEN FOOTPATH, DOWN TO THE RIVER)",
    "info": "The Thames at Wallingford holds Barbel, Chub, Roach, Perch, Zander, Pike and most Thames species. LENGTH 3030 yrds No Close Season Fishing - CLOSED March 15th - June 15th PLEASE RESPECT LOCAL RESIDENTS ACCESS. General Permit - See permitted times under rules Night fishing is avalibale to BRONZE ticket holders. BE AWARE OF OLD PROTRUDING FORMER FENCE SPIKES. Wallingford A : GUEST TICKETS AVAILABLE, NO DAY TICKETS Wallingford B: GUEST & DAY TICKETS AVAILABLE",
    "venue": {
@@ -1429,7 +1505,9 @@
     "RG10 0RA"
    ],
    "postcodeText": "RG10 0RA",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "Parking can be found at ///caused.scooped.nozzle",
    "info": "At 27 acres and bordered by our stretch of the river Loddon this is a fishery that is really coming into it’s own with reports of Carp to 50lb+. Tench in good numbers into double figures and Bream averaging 13lb+. Another popular pike fishery with lure anglers in the summer and bait anglers in the winter months. No zig rigs or hooklinks in excess of 500mm between the 1 st April - 1 st October General Permit - See permitted times under rules Night fishing is avalibale to NORTH/PLATINUM ticket holders only OPEN ALL YEAR 3 ROD LIMIT GUEST TICKETS ONLY No driving or parking vehicles anywhere other than marked car parks.",
    "venue": {
@@ -1462,7 +1540,9 @@
     "RG10 0SS"
    ],
    "postcodeText": "RG10 0SS",
-   "closeSeason": true,
+   "closeSeason": "15 Mar – 15 Jun",
+   "news": "",
+   "closedNotice": false,
    "directions": "Parking can be found at ///disbanded.spark.punctual (Middle) or ///caused.scooped.nozzle (Upstream)",
    "info": "Crystal clear water in the summer months make this a frustrating water where you can watch the fish take in and eject your bait but rewards are good with Barbel to 14lbs plus and Chub approaching 8lbs. Best fished when fining down after flood. Though some swear by getting there as the levels are rising. CLOSED March 15th - June 15th General Permit - See permitted times under rules Night fishing on Bronze/South/North/Platinum permit only No Close Season Fishing GUEST TICKETS ONLY. No 24 hour guest tickets.",
    "venue": {
@@ -1504,7 +1584,9 @@
     "RG10 0SS"
    ],
    "postcodeText": "RG10 0SS",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "Side of road parking can be found at ///socket.dinner.noses or Downstream RDAA parking at ///disbanded.spark.punctual",
    "info": "The river Loddon holds Barbel, Chub, Roach, Perch, Pike and most river species. General Permit - See permitted times under rules Night fishing is avalibale to Bronze ticket holders",
    "venue": {
@@ -1546,7 +1628,9 @@
     "RG30 3UW"
    ],
    "postcodeText": "RG30 3UW",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "Kirtons Farm Road ///normal.crown.times",
    "info": "This pool was completed and initially stocked in 2019/20 and has proved incredibly popular with both match and pleasure anglers. Big weights of carp to seven pound are now a regular occurrence. There is also a good head of roach, rudd and some small tench. WILLMOTTS RULES · ONE ROD ONLY · NO WHIP FISHING · ONLY ELASTICATED POLE or ROD-REEL FISHING · NO FEEDER or LEDGER FISHING · NO PELLET LOOSE FEED ONLY PELLET PURCHASED FROM THE HUT TO BE USED · NO BOILIES · YOU MUST HAVE A LANDING NET + UNHOOKING MAT · MINIMUM 6LB bs LINE or HOOKLINK · NO KEEPNETS PLEASE REFER TO ADDITIONAL ON SITE RULES. FISHING FROM PLATFORMS ONLY There is an onsite cafe which is usually open on Tuesdays, Thursdays, Fridays & Saturday mornings. There is also a onsite toilet next to the cafe. GUEST TICKETS ONLY - NO DAY TICKETS General Permit - See permitted times under rules",
    "venue": {
@@ -1579,7 +1663,9 @@
     "RG19 3AL"
    ],
    "postcodeText": "RG19 3AL",
-   "closeSeason": false,
+   "closeSeason": null,
+   "news": "",
+   "closedNotice": false,
    "directions": "///pile.lease.discrepancy",
    "info": "A delightful mixed fishery of around 7 acres, with a strong emphasis on Tench and Bream and of course mixed silvers. Good bags of a decent average size possible on the right day and method. No driving or parking vehicles anywhere other than marked car parks. TIMES - See permitted times under rules. NO NIGHT FISHING OPEN ALL YEAR 2 ROD LIMIT NO BAIT BOATS GUEST TICKETS ONLY",
    "venue": {
